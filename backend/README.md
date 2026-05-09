@@ -1,10 +1,18 @@
 # Backend quick run
 
-If you run backend directly in Codespaces (without Docker), install dependencies first:
+## Рекомендуемый запуск (без Docker, в Codespaces)
+
+```bash
+./scripts/start_backend.sh
+```
+
+Скрипт автоматически ставит зависимости и запускает API на `http://localhost:8000`.
+
+## Альтернатива (вручную)
 
 ```bash
 python -m pip install -r backend/requirements.txt
-uvicorn backend.app.main:app --reload --host 0.0.0.0 --port 8000
+python -m uvicorn backend.app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-Do **not** run `python backend/app/main.py` directly.
+Не запускайте `python backend/app/main.py` напрямую — это ASGI-приложение для запуска через Uvicorn.
