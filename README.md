@@ -1,5 +1,8 @@
 # Платформа автоматического анализа GDB и выявления топологических ошибок
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new)
+
+
 ## 1. Общая идея платформы
 
 Платформа предназначена для:
